@@ -1,0 +1,47 @@
+body {
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 20px;
+}
+
+.envelope-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-bottom: -10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    color: #333;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
