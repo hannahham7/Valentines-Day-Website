@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-button {
+.envelope {
     background: none;
     border: none;
     cursor: pointer;
@@ -25,6 +25,11 @@ button {
 img {
     width: 200px;
     height: auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 p {
