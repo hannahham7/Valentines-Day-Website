@@ -4,7 +4,7 @@ body {
     padding: 20px;
 }
 
-.envelope-container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,12 +22,13 @@ body {
     margin-bottom: -10px;
 }
 
-img {
+#unopened-envelope {
     width: 200px;
     height: auto;
+    transition: all 0.3s ease;
 }
 
-img:hover {
+#unopened-envelope:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
@@ -49,4 +50,40 @@ p {
     100% {
         transform: translateY(0);
     }
+}
+
+#yes-hamster {
+    width: 150px;
+    height: auto;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+#yes-button {
+    background-color: #fb74a8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#no-button {
+    background-color: #fb74a8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yes-button:hover, #no-button:hover {
+    background-color: #ff5c8a;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
