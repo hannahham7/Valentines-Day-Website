@@ -57,6 +57,11 @@ p {
     height: auto;
 }
 
+#love-hamster {
+    width: 350px;
+    height: auto;
+}
+
 .buttons-container {
     display: flex;
     gap: 20px;
