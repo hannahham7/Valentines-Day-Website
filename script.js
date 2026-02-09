@@ -2,11 +2,11 @@ const unopenedEnvelope = document.getElementById('unopened-envelope');
 
 const noButton = document.getElementById('no-button');
 const yesButton = document.getElementById('yes-button');
-const questionGif = document.getElementById('yes-hamster');
+const questionGif = document.getElementById('please-hamster');
 
-const originalGifSrc = 'images/yes_hamster.gif';
+const originalGifSrc = 'images/please_hamster.gif';
 
-let messages = ["Are you sure?", "Really sure?", "Are you positive?", "Pookie please...", "Don't make me sad...", "I will be very sad..."]
+let messages = ["Are you sure?", "Really sure?", "Are you positive?", "Pookie please...", "Don't make me sad...", "I will be very sad...", "Pretty please?"]
 let messageIndex = 0;
 
 function openEnvelope() {
@@ -35,7 +35,7 @@ noButton.addEventListener("mouseover", () => {
 
 noButton.addEventListener("mouseout", () => {
     questionGif.src = originalGifSrc;
-    questionGif.alt = 'Yes Hamster GIF';
+    questionGif.alt = 'Please Hamster GIF';
 });
 
 yesButton.addEventListener("mouseover", () => {
@@ -45,5 +45,5 @@ yesButton.addEventListener("mouseover", () => {
 
 yesButton.addEventListener("mouseout", () => {
     questionGif.src = originalGifSrc;
-    questionGif.alt = 'Yes Hamster GIF';
+    questionGif.alt = 'Please Hamster GIF';
 });

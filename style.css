@@ -52,14 +52,16 @@ p {
     }
 }
 
-#yes-hamster {
-    width: 150px;
+#please-hamster {
+    width: 300px;
     height: auto;
 }
 
 .buttons-container {
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 #yes-button {
